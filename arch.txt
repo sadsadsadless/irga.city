@@ -1,0 +1,71 @@
+
+
+re-usable components 
+
+default-header done
+default-header-navigation
+projects-header
+science-header 
+footer (all pages) 
+title-project (5) done
+about-us-info (2) done
+projects-block (2) done
+project-item (a lot) done
+service-item (3)
+team-item (9) done
+title-project-page (5) done
+project-page (all) done
+next-project (7) (use in science-item-page)
+science-item (2)
+science-item-page (2)
+
+re-usable ui-elements
+
+h2 + img (2) done
+h2 + p block (3) done
+more-button (a lot) done
+next-project done
+next-project 2 ? done
+modal-nav (a lot) done
+burger-menu (a lot) done
+
+
+tech-questions 
+
+how to make a child routes?
+how to make a slider? - done
+how to make a css-style-transition? - done
+
+what we do in the end?
+
+make a routing
+make a slider - done
+make a yandex cards api 
+
+
+690px -- change title's fz
+
+
+the end 
+
+routes 
+pages 
+footer - done
+data 
+make a yandex cards api 
+
+
+router 
+
+Outlet - all content in outlet 
+
+create component layout  
+
+<Route path="/" element={<Layout />}>
+  /* All Routes */
+</Route>
+
+
+NavLink
+
+NavLink automatically added css-class active to active component

@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  gap: 70px;
+  .exampleImage {
+    width: 337px;
+    height: 396px;
+    border-radius: 10px;
+    background-color: #c9c9c9;
+    object-fit: cover;
+  }
+  .infoSide {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 300px;
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400;
+      color: var(--bodyText);
+      max-width: 337px;
+    }
+    .subtitle {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bodyText);
+      font-weight: 400;
+      width: 276px;
+      max-width: calc(100% - 20px);
+    }
+  }
+}
+
+.sideContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  .exampleImage {
+    width: 337px;
+    height: 396px;
+    border-radius: 10px;
+    background-color: #c9c9c9;
+    object-fit: cover;
+  }
+  .infoSide {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 300px;
+    h4 {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: var(--bodyText);
+      max-width: 337px;
+    }
+    .subtitle {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 145%;
+      color: var(--bodyText);
+      font-weight: 400;
+      width: 276px;
+      max-width: calc(100% - 20px);
+    }
+  }
+}
+
+@media (max-width: 792px) {
+	.container {
+		gap: 32px;
+		.exampleImage {
+			width: 250px;
+			height: 300px;
+		}
+		.infoSide {
+			width: 200px;
+		}
+	}
+	.sideContainer {
+		gap: 32px;
+		.exampleImage {
+			width: 250px;
+			height: 300px;
+		}
+		.infoSide {
+			width: 200px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.container {
+		flex-direction: column;
+		margin: auto;
+		gap: 0px;
+		.infoSide {
+      width: 250px;
+			gap: 8px;
+      .subtitle {
+        width: 250px;
+      }
+		}
+	}
+	.sideContainer {
+		flex-direction: column;
+		margin: auto;
+		gap: 0px;
+		.infoSide {
+      width: 250px;
+			gap: 8px;
+      .subtitle {
+        width: 250px;
+      }
+		}
+	}
+}

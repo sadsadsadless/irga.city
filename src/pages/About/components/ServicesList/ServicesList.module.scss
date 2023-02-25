@@ -1,0 +1,31 @@
+.mainList {
+  padding: 100px 0px 39px 0px;
+  .h2 {
+    padding-left: 50px;
+  }
+  .list {
+    width: 980px;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .mainList {
+    padding: 100px 0px 39px 0px;
+  }
+}
+
+@media (max-width: 724px) {
+  .mainList {
+    padding: 24px 20px 0px 20px;
+    .h2 {
+      font-size: 24px;
+      line-height: 32px;
+      padding: 0px;
+    }
+  }
+}

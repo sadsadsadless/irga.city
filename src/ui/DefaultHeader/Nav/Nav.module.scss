@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  a {
+    font-size: 16px;
+    padding-right: 49px;
+  }
+  a:nth-last-child(-n + 1) {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 798px) {
+  .nav {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+}

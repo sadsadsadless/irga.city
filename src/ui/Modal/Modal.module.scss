@@ -1,0 +1,155 @@
+
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: var(--active);
+  animation: open-modal 0.3s;
+  animation-fill-mode: forwards;
+
+  button {
+    background-color: inherit;
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 62px;
+  }
+
+  img {
+    width: 480px;
+    max-width: calc(100% - 20px);
+    height: auto;
+    margin-left: 68px;
+    margin-right: 168px;
+  }
+
+  .content {
+    width: 560px;
+    max-width: calc(100% - 20px);
+    p {
+      font-size: 36px;
+      color: #fff;
+      line-height: 145%;
+      padding-top: 69px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .main {
+    img {
+      margin-right: 70px;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .main {
+    img {
+      width: 400px;
+      margin-right: 104px;
+    }
+    .content {
+      p {
+        font-size: 24px;
+        line-height: 32px;
+        width: 224px;
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .main {
+    img {
+      width: 300px;
+      margin-right: 72px;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .main {
+    img {
+      width: 240px;
+      margin-right: 56px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+    // flex-wrap: wrap;
+    // row-gap: 64px;
+
+    img {
+      margin-left: 84px;
+      margin-top: 88px;
+      width: 160px;
+    }
+    .content {
+      margin-left: 96px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .main {
+    img {
+      margin-left: 20px;
+    }
+    .content {
+      margin-left: 32px;
+    }
+  }
+}
+
+// @media (max-width: 1250px) {
+//   .main {
+//     img {
+//       width: 260px;
+//       margin-right: 70px;
+//     }
+//     .content {
+//       p {
+//         font-size: 24px;
+//         line-height: 32px;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 800px) {
+  .main {
+    position: fixed;
+  }
+}
+
+@keyframes open-modal {
+  from {
+    transform: translateY(-100%);
+  } to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes close-modal {
+  from {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(-100%);
+  }
+}
+
+.close {
+  animation: close-modal 0.2s;
+}

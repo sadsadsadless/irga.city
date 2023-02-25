@@ -1,0 +1,41 @@
+
+
+.list {
+  display: flex;
+  gap: 32px;
+  // width: 100%;
+  // max-width: calc(100% - 20px);
+}
+
+@media (max-width: 1000px) {
+  .list {
+    width: 100%;
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 916px) {
+  .list {
+    width: min-content;
+
+  }
+}
+
+@media (max-width: 737px) {
+  .list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 690px) {
+  .list {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 593px) {
+  .list {
+    width: 100%;
+    max-width: calc(100% - 20px);
+  }
+}

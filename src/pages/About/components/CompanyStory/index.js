@@ -1,0 +1,1 @@
+export { CompanyStory } from "./CompanyStory";

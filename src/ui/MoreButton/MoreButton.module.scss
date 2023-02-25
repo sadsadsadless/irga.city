@@ -1,0 +1,51 @@
+.button {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  .text {
+    font-size: 18px;
+    color: black;
+    -webkit-text-stroke-color: black;
+    padding-right: 10px;
+  }
+  .strelka {
+    position: relative;
+    color: black;
+    -webkit-text-stroke-color: black;
+    .arrow {
+      font-size: 26px;
+      font-weight: 100;
+      position: absolute;
+      left: -10px;
+      top: 2px;
+      transition: 0.2s all ease;
+    }
+    .circle {
+      height: 29px;
+      width: 29px;
+      background-color: var(--default);
+      border-radius: 50%;
+      transition: 0.2s all ease;
+    }
+  }
+}
+
+.button:hover {
+  .arrow {
+    font-size: 26px;
+    font-weight: 100;
+    position: absolute;
+    left: 16px;
+    top: 2px;
+    transition: 0.2s all ease;
+  }
+  .circle {
+    height: 29px;
+    width: 29px;
+    background-color: var(--active);
+    border-radius: 50%;
+    transition: 0.2s all ease;
+  }
+}

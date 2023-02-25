@@ -1,0 +1,115 @@
+
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--active);
+  padding: 72px;
+  overflow: hidden;
+  .left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    .button {
+      color: black;
+      display: flex;
+      align-items: center;
+      background-color: inherit;
+      column-gap: 48px;
+      width: max-content;
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          margin-right: 8px;
+          color: black;
+        }
+      }
+    }
+    .arrow {
+      font-size: 32px;
+      transition: all 0.2s ease;
+    }
+    .button:hover {
+      .arrow {
+        margin-left: 16px;
+      }
+    }
+    .title {
+      font-size: 37px;
+      line-height: 50px;
+      margin-bottom: 0px;
+      width: 585px;
+    }
+  }
+  .img {
+    width: 658px;
+    border-radius: 4px;
+    max-width: calc(100% - 20px);
+    object-fit: cover;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .img{
+    border-radius: 5px;
+    padding: 20px;
+    width: 600px;
+    max-width: calc(100% - 10px);
+    object-fit: cover;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 724px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .left {
+      .title {
+        font-size: 27px;
+        line-height: 34px;
+        width: 450px;
+      }
+    }
+    .img {
+      border-radius: 4px;
+      width: 600px;
+      max-width: calc(100% - 10px);
+      object-fit: cover;
+      margin-left: 5%;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    .left {
+      .title {
+        font-size: 20px;
+        line-height: 27px;
+        width: 240px;
+      }
+    }
+    .img {
+      border-radius: 4px;
+      width: 300px;
+      object-fit: cover;
+      margin-left: 5%;
+    }
+  }
+}

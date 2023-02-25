@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkirga_city_app=self.webpackChunkirga_city_app||[]).push([[726],{679:(a,e,s)=>{var c=s(486),i=s.n(c);console.log(i().join(["Second","is","loaded"]," "))}},a=>{a(a.s=679)}]);
+//# sourceMappingURL=second.bundle.js.map

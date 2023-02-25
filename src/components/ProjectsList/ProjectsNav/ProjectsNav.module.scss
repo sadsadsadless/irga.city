@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	column-gap: 24px;
+	width: 400px;
+
+	a {
+		height: min-content;
+		font-size: 16px;
+		line-height: 145%;
+		color: var(--lightGray);
+		transition: 0.2s all ease;
+		font-weight: normal;
+		h5 {
+			font-weight: normal;
+		}
+	}
+
+
+
+	a:hover {
+		color: var(--lightBlack);
+	}
+}
+
+@media (max-width: 1224px) {
+	.nav {
+		row-gap: 28px;
+	}
+}
+
+@media (max-width: 724px) {
+	.nav {
+		width: 100%;
+		max-width: calc(100% - 20px);
+	}
+}
